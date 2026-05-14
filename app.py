@@ -30,7 +30,7 @@ oauth2 = OAuth2Component(
 )
 
 # Redirect URI
-REDIRECT_URI = "http://localhost:8501"
+REDIRECT_URI = st.secrets["google"]["redirect_uri"]
 
 # Login Button
 result = oauth2.authorize_button(
